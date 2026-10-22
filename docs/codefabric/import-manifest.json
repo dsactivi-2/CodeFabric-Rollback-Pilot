@@ -1,0 +1,448 @@
+{
+  "source_repository": "dsactivi-2/Manufact-DB-Roleback-MCP",
+  "source_sha": "74de30cd879300c34946f7b7df5b23fcd43a9de8",
+  "target_repository": "dsactivi-2/CodeFabric-Rollback-Pilot",
+  "source_tracked_files": 99,
+  "source_files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "9f62edad894fa96a7b2d7b3d79eebbd1712d5dacaaed5bf032c7636d74663b68"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "bf9787bfa921678a9d28805caa6700ad53756d99f0da84b67e5ad8a775dc1642"
+    },
+    {
+      "path": "README.md",
+      "sha256": "cfed8925fa93b023b1d35a4fb789677046e2401cc5def6c616050c8ca918b4bd"
+    },
+    {
+      "path": "RUNBOOK.md",
+      "sha256": "d3bd736d474978a1b1881bb809213f039a1a55398d461d98aa204ba16bd9c5af"
+    },
+    {
+      "path": "cloudflare/worker/README.md",
+      "sha256": "aecacd125c7b86efb2ecdd08651b5e82a9d6a2f87b92b71bccaa55e550b6dba2"
+    },
+    {
+      "path": "cloudflare/worker/package-lock.json",
+      "sha256": "bd6ffb51cb00eae3ae42050a11d34f79c1821f3ef1d126a00d104f000a325421"
+    },
+    {
+      "path": "cloudflare/worker/package.json",
+      "sha256": "6a8f1bd793af442d00af5d03b2fdabad435a9aacc260303a216ef7e2b80387bf"
+    },
+    {
+      "path": "cloudflare/worker/tsconfig.json",
+      "sha256": "607b3b91a2ce512f658630e156f6793e51a1ae089edd1d76610e8f96080e8558"
+    },
+    {
+      "path": "cloudflare/worker/wrangler.jsonc",
+      "sha256": "4c23a41c36586049e18a5d0c288d8a4f2c62a6e215684ad0539d9e834aa1e2f8"
+    },
+    {
+      "path": "cloudflare/worker/wrangler.staging.jsonc",
+      "sha256": "66bcbc74d9fedf04a940b37edbc67c240228676f4704e8e47d19fbcfb9cf7f8e"
+    },
+    {
+      "path": "config/activation-plan.example.json",
+      "sha256": "72b1f3a0e1e16fa4baa4408d750e548c73eec1c757b431eb95d3cd2123d3e6ae"
+    },
+    {
+      "path": "contracts/mutations.ts",
+      "sha256": "543a387c8d4392a5ddf2ce01b67758f8885d045705f4607fb5522d5790e70ea1"
+    },
+    {
+      "path": "contracts/read.ts",
+      "sha256": "7f06600e51ec60df5934c23f7dfbc180b7e02aae5277dd75e8d1f87dc7565632"
+    },
+    {
+      "path": "docs/Arbeitsstand.md",
+      "sha256": "8f74a8a0648675c22582d33a47faa65d4cf98a0d9ec86eb8576cb6ea012b0937"
+    },
+    {
+      "path": "docs/Hermes_povezivanje.md",
+      "sha256": "50bd44ea9be02e4c1e24f0a60effac6474a962275bf9674c624bcffb0e024e94"
+    },
+    {
+      "path": "docs/Projektstatus_DE.md",
+      "sha256": "17d227c2faedaba36e91839ee3a6c89f4c927fbe6847f908c9717df90b4c4d0a"
+    },
+    {
+      "path": "docs/Status_2026-10-13.md",
+      "sha256": "23deb559589129fd1f634bbe5472548ffd3bcf97d723ad14a5889fc0650da685"
+    },
+    {
+      "path": "docs/Uebergabe_2026-10-14.md",
+      "sha256": "82cc8c65a9951dd10d0cade70bb9837272999d335d6777a10a943500354ac439"
+    },
+    {
+      "path": "hermes-plugin/README.md",
+      "sha256": "ae61bf927b5624a45f7da8d75d2f4451a68f2c55d43719184378885369e8fd83"
+    },
+    {
+      "path": "hermes-plugin/mcp.json",
+      "sha256": "183499bfed7b17db6ec1f9b6af8801fca2e9637f2fb4ab15852a70c1d2a9fb18"
+    },
+    {
+      "path": "hermes-plugin/plugin.json",
+      "sha256": "7c329b5327d4d107ca6602178a04c276708bdeb42def3881ddf5c2eaabb4d364"
+    },
+    {
+      "path": "hermes-plugin/skills/crm-kandidatensuche/SKILL.md",
+      "sha256": "67556686c26c6310bd25bfa269ad577b9b3eec14c4e3ac5fc4eb0e32f0d10d82"
+    },
+    {
+      "path": "hermes-plugin/skills/crm-kandidatensuche/agents/openai.yaml",
+      "sha256": "a92e4de2b04ad233c400af49e67bcab412cf37dfd10c406bd808f3f7bb49df70"
+    },
+    {
+      "path": "hermes-plugin/skills/crm-kandidatensuche/guides/crm_search_guide.json",
+      "sha256": "639b63fb53ecdc8eec3cefbb3b31768564790fb5cb4d45a61ded1375746cfd38"
+    },
+    {
+      "path": "hermes-plugin/skills/crm-kandidatensuche/guides/crm_search_guide.md",
+      "sha256": "4892e1c5f60342f4ef452d817befdabf46ed43e6aaf73610e01fd5b07fb5e546"
+    },
+    {
+      "path": "hermes-plugin/skills/crm-kandidatensuche/references/privacy.md",
+      "sha256": "5b70303f6b0cc5900354d8c103197f3f677b2c8e1ccacce1d278cf15b133e288"
+    },
+    {
+      "path": "hermes-plugin/skills/crm-kandidatensuche/references/query-rules.md",
+      "sha256": "662a81cba01daae8bdb67397321950dee78d6c7971ca4821c2e5b218d80b6b1e"
+    },
+    {
+      "path": "hermes-plugin/skills/crm-kandidatensuche/references/tool-contracts.md",
+      "sha256": "fe5aefc83b0dcb59455f921a759aa67d69bc45ecabdb9446013bba158bac2c78"
+    },
+    {
+      "path": "hermes-plugin/skills/crm-kandidatensuche/references/writes.md",
+      "sha256": "ab7593ddc3e8b97ff59764508be91867b7553ee0c628bb12429085c7341cc097"
+    },
+    {
+      "path": "index.ts",
+      "sha256": "3ed0774a7c61d5ee2e3120ed3a3e8c4f5bb6323310aea36f80bcd4d81db39c57"
+    },
+    {
+      "path": "mcp-env.d.ts",
+      "sha256": "6e6c45bc4ac12f0900a1d5d96fa404484ff8c767a3e92897b7368b835fa239ce"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "6abc0722ff1e1b6d4a1d23205cd3e8d91ce4bd52eb2d1d1235812327062bb66e"
+    },
+    {
+      "path": "package.json",
+      "sha256": "6550825588ad18aeb626d21c9ebc69ec274ebe7936f69f9914ccb6ad412e429d"
+    },
+    {
+      "path": "public/icon.svg",
+      "sha256": "c6c8b96f49b72b5d8513aaeb06ca29d8b834c4c27256223ff6e3c3bcdad684da"
+    },
+    {
+      "path": "scripts/check-production-history-tables.mjs",
+      "sha256": "0947db08df1d3140fdde372c2955c9eedda8b3bf46fd762f24e2fe82452a7320"
+    },
+    {
+      "path": "scripts/check-runtime-read.mjs",
+      "sha256": "7644372fc95532a63dc957f530bb2154d0ac1800327f32ed77fda4be315b189c"
+    },
+    {
+      "path": "scripts/configure-identity.mjs",
+      "sha256": "f2f5ea49bf5cddc33c361cf294ca9ab9c036c6521dc495155fe9327c9792aed6"
+    },
+    {
+      "path": "scripts/configure-mcp-gateway.mjs",
+      "sha256": "bef14953977759143bdea1a7da555184743a399b08f33a6d7c067f7b3d22db72"
+    },
+    {
+      "path": "scripts/create-hyperdrive.mjs",
+      "sha256": "f68f44a6a511a48aa6ada5a372fcdada5fe5e4ebafd75eec9e73c0d031097a9c"
+    },
+    {
+      "path": "scripts/grant-minimal.mjs",
+      "sha256": "3e8960a442fe4c2e4494cd84ee3557c25d3dda5de6e88483cd025c2b013464e2"
+    },
+    {
+      "path": "scripts/inventory-production-schema.mjs",
+      "sha256": "7336f6257e37d95970dc23633c13d939d24055dc81a906fa2925af3dd05e7d29"
+    },
+    {
+      "path": "scripts/preflight.mjs",
+      "sha256": "ba83cc6a9d426c84590c00bb65ffc933e7e7a62a7c84c4adebb9fc2ca1c05713"
+    },
+    {
+      "path": "scripts/provision-db.mjs",
+      "sha256": "ac1e792bbe7c8754311388586e9af820375e659cb9c06143ea35ee7d5f4d8c90"
+    },
+    {
+      "path": "scripts/set-worker-secret.mjs",
+      "sha256": "4d4f6546eba7039bb38c6b127ca088dc4d3a87b298d001168a6b8594832df063"
+    },
+    {
+      "path": "scripts/setup-rollback-test.mjs",
+      "sha256": "92e2b9065543558eb459745a54a1d1fea8f608d2cc97f49a23c136856f4bd747"
+    },
+    {
+      "path": "scripts/smoke-history.mjs",
+      "sha256": "c5a46719ded10cfa806aac00b1151222de53f2ef5f96bc1fc8ea55427a91f589"
+    },
+    {
+      "path": "scripts/smoke-mcp.mjs",
+      "sha256": "da6a2ed7b731eb93ed7519a5c04348db62197203b8dcee8a3c581eb6fef9def6"
+    },
+    {
+      "path": "scripts/smoke-mutation-tools.mjs",
+      "sha256": "39bf7a0e1531e8d536770c47ef9ac8cf43ead8017a238bd4698d99ee03d0bd24"
+    },
+    {
+      "path": "scripts/smoke-read-routes.mjs",
+      "sha256": "cd527f1bdd706d25932c42536fa964ed83e4ac11867e80475369d028f2131dcd"
+    },
+    {
+      "path": "scripts/smoke-worker.mjs",
+      "sha256": "4fab35c7bed055aa72123b1a548da6571ffa15aae22fa8d0a6453d592c32c439"
+    },
+    {
+      "path": "scripts/tail-worker-safe.mjs",
+      "sha256": "90127699ed1d8f4366cae0720d90c95bf81906932c190b960e565f883ef0f520"
+    },
+    {
+      "path": "skills/crm-kandidatensuche/SKILL.md",
+      "sha256": "ab0769308daf6d6ba80ece9d1edb7cc19405c3fe7fc497af29bec5ced127725c"
+    },
+    {
+      "path": "skills/crm-kandidatensuche/agents/openai.yaml",
+      "sha256": "a92e4de2b04ad233c400af49e67bcab412cf37dfd10c406bd808f3f7bb49df70"
+    },
+    {
+      "path": "skills/crm-kandidatensuche/guides/crm_search_guide.json",
+      "sha256": "639b63fb53ecdc8eec3cefbb3b31768564790fb5cb4d45a61ded1375746cfd38"
+    },
+    {
+      "path": "skills/crm-kandidatensuche/guides/crm_search_guide.md",
+      "sha256": "4892e1c5f60342f4ef452d817befdabf46ed43e6aaf73610e01fd5b07fb5e546"
+    },
+    {
+      "path": "skills/crm-kandidatensuche/references/privacy.md",
+      "sha256": "5b70303f6b0cc5900354d8c103197f3f677b2c8e1ccacce1d278cf15b133e288"
+    },
+    {
+      "path": "skills/crm-kandidatensuche/references/query-rules.md",
+      "sha256": "662a81cba01daae8bdb67397321950dee78d6c7971ca4821c2e5b218d80b6b1e"
+    },
+    {
+      "path": "skills/crm-kandidatensuche/references/tool-contracts.md",
+      "sha256": "fe5aefc83b0dcb59455f921a759aa67d69bc45ecabdb9446013bba158bac2c78"
+    },
+    {
+      "path": "skills/crm-kandidatensuche/references/writes.md",
+      "sha256": "ab7593ddc3e8b97ff59764508be91867b7553ee0c628bb12429085c7341cc097"
+    },
+    {
+      "path": "sql/migrations/001_history_schema.sql",
+      "sha256": "8ade7ca1c6a119e8025708fc7134a2fe5d785c1bd1eece58d6b9904362ca5d9e"
+    },
+    {
+      "path": "sql/migrations/002_synthetic_candidate.TEST.sql",
+      "sha256": "65fd880cc79a6d9e99fc4d5e9a8a90ce23d550674bcdbc7fcb833de95e952bb4"
+    },
+    {
+      "path": "src/aiven-ca.ts",
+      "sha256": "f588a2595064c8c6bad09a60512ab43740973be594be2fa54fb3a208b0d9f5f2"
+    },
+    {
+      "path": "src/auth.ts",
+      "sha256": "963b4ffd842576539308d80347fb026fc68e4f0ee34df93b616c3cbb92f05f2d"
+    },
+    {
+      "path": "src/canonical.ts",
+      "sha256": "d445ea6f58458a574fc5ba8ded3a038bd4c01a9e39459755240e0631a862b194"
+    },
+    {
+      "path": "src/config.ts",
+      "sha256": "b33293f6134d7bee1330d5e55b84f528db8227d5e5da4fba45c3e4fba5c59ebe"
+    },
+    {
+      "path": "src/crm-error.ts",
+      "sha256": "852c804992bc19b1af1ac4e6bc7c1f689e0e9bf26dfaca97dca51027a17d340f"
+    },
+    {
+      "path": "src/db-privileges.ts",
+      "sha256": "21135f9388e57071c478dcce685b370696519b3d909f0b27e2e835eb76597924"
+    },
+    {
+      "path": "src/db.ts",
+      "sha256": "2caea31bcef0a37b771a05b73abb1a023dc03bce160292a5e6f41d3149560c94"
+    },
+    {
+      "path": "src/filter-cache.ts",
+      "sha256": "18bb642aac4a146803290afbfdc25c03718daebeb1e909b784270bd59af6ca88"
+    },
+    {
+      "path": "src/guard.ts",
+      "sha256": "08dfc72f09efbbb67f90c25634fae39146aca3c3c10c50c8c1cd529e990e0561"
+    },
+    {
+      "path": "src/guides.ts",
+      "sha256": "6753e268df741d8938c0f280269b37b5418a8c93c5b4e153c504de11d034d835"
+    },
+    {
+      "path": "src/history.ts",
+      "sha256": "8c47a824409b5142d58614b69d107f213b4dd57854c92068644dde0af8b5ca11"
+    },
+    {
+      "path": "src/identity.ts",
+      "sha256": "1b04b66979304af9a3b84a4340e34f09572ee9a0a13fbfdca2945c6c1bce5888"
+    },
+    {
+      "path": "src/isolation.ts",
+      "sha256": "ca7b2a447ee1c4bb814050341cc18aa694a7a0740c498a64c99931b93c376d7d"
+    },
+    {
+      "path": "src/outbox.ts",
+      "sha256": "90b4115ca3faef59a5a50dfafa75174f1e4e2410dde8c672cb3c201bc8ac7301"
+    },
+    {
+      "path": "src/permissions.ts",
+      "sha256": "1f4e075042484d7bdb2e8dfc39f92fc0819f209c9d86b61ffc374b4e75d1fb32"
+    },
+    {
+      "path": "src/read.ts",
+      "sha256": "49be328ecba68945377ce0c442684f3728f208ec4e870e93936a20022c13df4b"
+    },
+    {
+      "path": "src/registry.ts",
+      "sha256": "75f22862133fc7b1756ff4c20b4845ca207cc7e4bbd693420c665b24ee4a3ca7"
+    },
+    {
+      "path": "src/sql-session.ts",
+      "sha256": "8f6bced6b767648f00c5e2b6cfafeb6306ffa3f842fc17655ab03b4ed01238b7"
+    },
+    {
+      "path": "src/sql.ts",
+      "sha256": "36076f69b077bb24e0f388da6c2f0b81b290a9b91fc418369e19961a90d76ce3"
+    },
+    {
+      "path": "src/worker-client.ts",
+      "sha256": "24580817db534e542a72495cd99e4de43a70400535f422b9ac73c12a6ea4745a"
+    },
+    {
+      "path": "src/worker/http.ts",
+      "sha256": "4f5dcaab6bde5cc1c3d4d5ef18a2529a191a23fce256f22bc655d013767c1c05"
+    },
+    {
+      "path": "src/worker/hyperdrive.ts",
+      "sha256": "2f9671b5a61afa3ebfe045f7de691fac240b6657360539fb2527c437fffa3213"
+    },
+    {
+      "path": "src/worker/index.ts",
+      "sha256": "f796b00e8b65b693f1b79c3054f92c7362af363a6be3ee1192119717267a877d"
+    },
+    {
+      "path": "src/xml-export.ts",
+      "sha256": "7ecd079790c0994f76295b4f4cc1cc91e984035a48d6d036bd7aab05f0a00548"
+    },
+    {
+      "path": "test/architecture.test.ts",
+      "sha256": "06d12fb3cd958783a99c657bdaa090ea8c9eb4668529a6c09f888b90c1adcbc2"
+    },
+    {
+      "path": "test/auth.test.ts",
+      "sha256": "716c635fe9a36b435d5be20be42ce1546d488fa416603fb9d8dad45b4a9e7bc7"
+    },
+    {
+      "path": "test/db.test.ts",
+      "sha256": "1aaf81470aed211f22d157f9ed13c7dc32bb789b0b052ab27ada523189919b30"
+    },
+    {
+      "path": "test/evals.json",
+      "sha256": "67f5a0bc45b47b09629699644a7601005790ad85e139e8731cd13daf295a9128"
+    },
+    {
+      "path": "test/evals.test.ts",
+      "sha256": "8450a08c2320b5086e238f2b7b84f7f2fdbdd19fc124f089cc5692024636ab7b"
+    },
+    {
+      "path": "test/filter-cache.test.ts",
+      "sha256": "b97bb784295497871ecd0232a8130c7a1acfdcf056ba9672b1ea72d3ed2688fc"
+    },
+    {
+      "path": "test/guides.test.ts",
+      "sha256": "bbfd7ed67ca697a314f680121e650e48c66b71665dd18853963803dad14739cf"
+    },
+    {
+      "path": "test/mysql/history.mysql.test.ts",
+      "sha256": "d7534f429e303db00b2a30ba656068d048fdf1cd05c6e3baac1e761f244c2ba5"
+    },
+    {
+      "path": "test/mysql/mcp.mysql.test.ts",
+      "sha256": "8a6ccff4de16f72356e55ad62f3c41b006dbe514d8f6dc9c77ab9e52e3cf05a8"
+    },
+    {
+      "path": "test/mysql/worker.mysql.test.ts",
+      "sha256": "960b1d82066fc1d962325d8f7d24203a5fe484e70d3ec7bafcbffa1bb4e5f361"
+    },
+    {
+      "path": "test/sql.test.ts",
+      "sha256": "d7bd55a37621c82efdbabce3ad2be35f6779375236c71d0661b996c5f85a878c"
+    },
+    {
+      "path": "test/worker.test.ts",
+      "sha256": "009e09d57304c029b0968837005d348e504c411a0de9d5454807f611d4ed477c"
+    },
+    {
+      "path": "test/xml-export.test.ts",
+      "sha256": "26cd021475375d715e3680280c29562a50e4c0f4d555de4a31962ff2f73a4ea6"
+    },
+    {
+      "path": "tsconfig.json",
+      "sha256": "9357901844a4379349c0a001e834d13e81b10b9689ba05adc950981d0d6a4c75"
+    }
+  ],
+  "modified_source_files": [
+    "cloudflare/worker/package.json",
+    "cloudflare/worker/wrangler.jsonc",
+    "cloudflare/worker/wrangler.staging.jsonc",
+    "hermes-plugin/mcp.json",
+    "package.json",
+    "scripts/check-production-history-tables.mjs",
+    "scripts/check-runtime-read.mjs",
+    "scripts/configure-identity.mjs",
+    "scripts/configure-mcp-gateway.mjs",
+    "scripts/create-hyperdrive.mjs",
+    "scripts/grant-minimal.mjs",
+    "scripts/inventory-production-schema.mjs",
+    "scripts/preflight.mjs",
+    "scripts/provision-db.mjs",
+    "scripts/set-worker-secret.mjs",
+    "scripts/setup-rollback-test.mjs",
+    "scripts/smoke-history.mjs",
+    "scripts/smoke-mcp.mjs",
+    "scripts/smoke-mutation-tools.mjs",
+    "scripts/smoke-read-routes.mjs",
+    "scripts/smoke-worker.mjs",
+    "scripts/tail-worker-safe.mjs"
+  ],
+  "blocked_scripts": [
+    "scripts/check-production-history-tables.mjs",
+    "scripts/check-runtime-read.mjs",
+    "scripts/configure-identity.mjs",
+    "scripts/configure-mcp-gateway.mjs",
+    "scripts/create-hyperdrive.mjs",
+    "scripts/grant-minimal.mjs",
+    "scripts/inventory-production-schema.mjs",
+    "scripts/provision-db.mjs",
+    "scripts/set-worker-secret.mjs",
+    "scripts/setup-rollback-test.mjs",
+    "scripts/smoke-history.mjs",
+    "scripts/smoke-mcp.mjs",
+    "scripts/smoke-mutation-tools.mjs",
+    "scripts/smoke-read-routes.mjs",
+    "scripts/smoke-worker.mjs",
+    "scripts/tail-worker-safe.mjs"
+  ],
+  "no_git_history_copied": true,
+  "credential_scan": "Targeted patterns: no token/private-key hits. DB URI matches were test fixtures; not a comprehensive secret audit."
+}

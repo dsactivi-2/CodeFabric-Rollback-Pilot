@@ -1,0 +1,21 @@
+{
+  "name": "codefabric-rollback-pilot-staging",
+  "main": "../../src/worker/index.ts",
+  "compatibility_date": "2026-10-07",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "workers_dev": true,
+  "vars": {
+    "ENVIRONMENT": "staging",
+    "WRITES_ENABLED": "false",
+    "RESTORES_ENABLED": "false",
+    "REQUIRE_APPROVAL": "true",
+    "ALLOW_TEST_ENTITIES": "false",
+    "HISTORY_RETENTION_DAYS": "365"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  }
+}

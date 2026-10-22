@@ -1,0 +1,51 @@
+{
+  "name": "manufact-db-rollback-mcp",
+  "type": "module",
+  "engines": {
+    "node": ">=22.22.2"
+  },
+  "version": "1.0.0",
+  "description": "Manufact DB Rollback MCP with Cloudflare reads and protected history/rollback workflows.",
+  "author": "Manufact",
+  "license": "MIT",
+  "homepage": "https://github.com/dsactivi-2/Manufact-DB-Roleback-MCP",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsactivi-2/Manufact-DB-Roleback-MCP.git"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "chatgpt plugins",
+    "claude connector",
+    "mcp-app",
+    "mcp-use",
+    "manufact"
+  ],
+  "scripts": {
+    "build": "mcp-use build",
+    "dev": "mcp-use dev",
+    "start": "mcp-use start",
+    "deploy": "node scripts/pilot-provisioning-disabled.mjs",
+    "typecheck": "mcp-use typecheck",
+    "test": "node --experimental-strip-types --test test/*.test.ts",
+    "test:mysql": "node --experimental-strip-types --test --test-concurrency=1 test/mysql/*.test.ts",
+    "preflight": "node --experimental-strip-types scripts/preflight.mjs",
+    "preflight:activation": "node --experimental-strip-types scripts/preflight.mjs --activation",
+    "verify": "npm run preflight && npm test && npm run typecheck && npm run build",
+    "verify:worker": "npm --prefix cloudflare/worker test && npm --prefix cloudflare/worker run typecheck && npm --prefix cloudflare/worker run build",
+    "smoke:mutation-tools": "node scripts/smoke-mutation-tools.mjs",
+    "check:production-history": "node scripts/check-production-history-tables.mjs",
+    "inventory:production-schema": "node scripts/inventory-production-schema.mjs",
+    "grant:minimal": "node --experimental-strip-types scripts/grant-minimal.mjs"
+  },
+  "dependencies": {
+    "mcp-use": "2.7.3",
+    "mysql2": "^3.15.3",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.0",
+    "typescript": "^7.0.2"
+  }
+}
